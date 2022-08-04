@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     } 
     @objc func routeTapped() {
         print("route")
-        for index in 0..<annotationsArray.count-1 {
+        for index in 0...annotationsArray.count-1 {
             showRouteOnMap(startCoordinate: annotationsArray[index].coordinate, destinationCoordinate: annotationsArray[index+1].coordinate)
         }
         mapView.showAnnotations(annotationsArray, animated: true)
