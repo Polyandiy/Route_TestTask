@@ -78,11 +78,11 @@ class ViewController: UIViewController {
     }
     @objc func resetTapped() {
         print("reset")
-//        mapView.removeOverlay(mapView.overlays)
-//        mapView.removeAnnotation(mapView.annotations)
-//        annotationsArray = [MKPointAnnotation]()
-//        buttonRoute.isHidden = true
-//        buttonReset.isHidden = true
+        mapView.removeOverlay(mapView.overlays)
+        mapView.removeAnnotation(mapView.annotations)
+        annotationsArray = [MKPointAnnotation]()
+        buttonRoute.isHidden = true
+        buttonReset.isHidden = true
     }
     
     
